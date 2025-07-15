@@ -30,6 +30,41 @@
       max-width: 700px;
       margin: 0 auto 30px;
     }
+    form {
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: left;
+      background-color: #1f1f1f;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    form button {
+      padding: 14px 28px;
+      font-size: 1em;
+      background-color: #b4a774;
+      color: #141414;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    form button:hover {
+      background-color: #a39763;
+    }
     .header-buttons {
       margin-top: 20px;
     }
@@ -94,22 +129,18 @@
       text-align: center;
       border-top: 1px solid #333;
     }
-    .cta button, .cta a {
+    .cta a {
       margin: 10px;
       padding: 14px 28px;
       font-size: 1em;
       text-decoration: none;
-      border: none;
       background-color: #b4a774;
       color: #141414;
-      cursor: pointer;
       border-radius: 30px;
       transition: all 0.3s ease;
-    }
-    .cta a {
       display: inline-block;
     }
-    .cta button:hover, .cta a:hover {
+    .cta a:hover {
       background-color: #a39763;
     }
     footer {
@@ -139,9 +170,10 @@
       header p {
         font-size: 1em;
       }
-      .cta button, .cta a,
+      .cta a,
       .header-buttons .main-btn,
-      .header-buttons .secondary-btn {
+      .header-buttons .secondary-btn,
+      form button {
         width: 100%;
         margin-top: 10px;
       }
@@ -153,18 +185,35 @@
     <h1>Custom Veneers in Los Angeles</h1>
     <p>Finally get the smile you've always wanted, with a hand crafted smile artfully made to brighten and lift your face!</p>
     <div class="header-buttons">
-      <button class="main-btn" onclick="window.location.href='mailto:info@yourdomain.com'">Request A Consult</button>
+      <a class="main-btn" href="#consult-form">Request A Consult</a>
     </div>
     <img src="veneers-banner.jpg" alt="Custom Veneers Banner" />
     <h2>Is it time for the smile of your dreams?</h2>
     <div class="header-buttons">
-      <button class="main-btn" onclick="window.location.href='mailto:info@yourdomain.com'">Request A Consult</button><br>
+      <a class="main-btn" href="#consult-form">Request A Consult</a><br>
       <a class="secondary-btn" href="#">Virtual Consult</a>
       <a class="secondary-btn" href="https://jasoncellarsdds.com/veneers" target="_blank">Learn More</a>
       <a class="secondary-btn" href="https://your-scheduling-portal.com" target="_blank">Schedule Online</a>
     </div>
   </header>
   <div class="container">
+    <form id="consult-form">
+      <h2>Request a Free Consult</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">How can we help you?</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+
     <div class="section">
       <h2>Our Published and Award Winning Cosmetic Dentists</h2>
       <p>Your smile is everything! Dr. Andrew Higgins and Dr. Jason Cellars were trained by the best cosmetic dentists in the world and have perfected the art of creating smiles. They hand craft the smile so that it matches each person's unique face so that it isn't just a set of white teeth but a beautifully natural smile that looks like your own and enhances your entire face. Backed by the best ceramists in the world whether you want to fix chips, staining, missing teeth, or crowded teeth, your smile can be transformed in just a few visits, painlessly!</p>
@@ -192,7 +241,7 @@
   </div>
   <div class="cta">
     <h2>Ready for Your New Smile?</h2>
-    <button onclick="window.location.href='mailto:info@yourdomain.com'">Request a Call Back</button>
+    <a href="#consult-form">Request a Call Back</a>
     <a href="https://jasoncellarsdds.com/veneers" target="_blank">Learn More</a>
     <a href="https://your-scheduling-portal.com" target="_blank">Schedule Online</a>
   </div>
