@@ -30,6 +30,38 @@
       max-width: 700px;
       margin: 0 auto 30px;
     }
+    .header-buttons {
+      margin-top: 20px;
+    }
+    .header-buttons .main-btn {
+      margin: 10px;
+      padding: 16px 32px;
+      font-size: 1.1em;
+      font-weight: 600;
+      background-color: #b4a774;
+      color: #141414;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .header-buttons .main-btn:hover {
+      background-color: #a39763;
+    }
+    .header-buttons .secondary-btn {
+      margin: 8px;
+      padding: 12px 24px;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #b4a774;
+      color: #141414;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    .header-buttons .secondary-btn:hover {
+      background-color: #a39763;
+    }
     .container {
       max-width: 900px;
       margin: 0 auto;
@@ -107,7 +139,9 @@
       header p {
         font-size: 1em;
       }
-      .cta button, .cta a {
+      .cta button, .cta a,
+      .header-buttons .main-btn,
+      .header-buttons .secondary-btn {
         width: 100%;
         margin-top: 10px;
       }
@@ -120,10 +154,12 @@
     <p>Finally get the smile you've always wanted, with a hand crafted smile artfully made to brighten and lift your face!</p>
     <img src="veneers-banner.jpg" alt="Custom Veneers Banner" />
     <h2>Is it time for the smile of your dreams?</h2>
-    <button onclick="window.location.href='mailto:info@yourdomain.com'">Request A Consult</button><br>
-    <a href="#">Virtual Consult</a>
-    <a href="https://jasoncellarsdds.com/veneers" target="_blank">Learn More</a>
-    <a href="https://your-scheduling-portal.com" target="_blank">Schedule Online</a>
+    <div class="header-buttons">
+      <button class="main-btn" onclick="window.location.href='mailto:info@yourdomain.com'">Request A Consult</button><br>
+      <a class="secondary-btn" href="#">Virtual Consult</a>
+      <a class="secondary-btn" href="https://jasoncellarsdds.com/veneers" target="_blank">Learn More</a>
+      <a class="secondary-btn" href="https://your-scheduling-portal.com" target="_blank">Schedule Online</a>
+    </div>
   </header>
   <div class="container">
     <div class="section">
