@@ -1,204 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom Veneers in Los Angeles | Studio Smiles</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Veneers in Los Angeles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Open Sans', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Open Sans', sans-serif;
       background-color: #141414;
       color: #f5f5f5;
+      line-height: 1.6;
     }
     header {
-      background-color: #141414;
-      padding: 60px 20px 30px;
+      background: #141414;
       text-align: center;
+      padding: 2rem 1rem 1rem;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      color: #f5f5f5;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #f5f5f5;
-      max-width: 700px;
-      margin: 0 auto 30px;
-    }
-    form {
-      margin: 20px auto;
-      max-width: 600px;
-      text-align: left;
-      background-color: #1f1f1f;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    }
-    form label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 20px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1em;
-    }
-    form button {
-      padding: 14px 28px;
-      font-size: 1em;
-      background-color: #b4a774;
-      color: #141414;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    form button:hover {
-      background-color: #a39763;
-    }
-    .header-buttons {
-      margin-top: 20px;
-    }
-    .header-buttons .main-btn {
-      margin: 10px;
-      padding: 16px 32px;
-      font-size: 1.1em;
-      font-weight: 600;
-      background-color: #b4a774;
-      color: #141414;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    .header-buttons .main-btn:hover {
-      background-color: #a39763;
-    }
-    .header-buttons .secondary-btn {
-      margin: 8px;
-      padding: 12px 24px;
-      font-size: 1em;
-      text-decoration: none;
-      background-color: #b4a774;
-      color: #141414;
-      border-radius: 30px;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-    .header-buttons .secondary-btn:hover {
-      background-color: #a39763;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    .section {
-      margin-bottom: 50px;
-      background-color: #1f1f1f;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8em;
-      margin-bottom: 15px;
+      font-size: 2.5rem;
+      margin: 0;
       color: #b4a774;
     }
-    p, ul {
-      font-size: 1.05em;
-      line-height: 1.6;
-      color: #f5f5f5;
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
-    ul {
-      padding-left: 20px;
-    }
-    .cta {
-      background-color: #1f1f1f;
-      padding: 40px;
-      text-align: center;
-      border-top: 1px solid #333;
-    }
-    .cta a {
-      margin: 10px;
-      padding: 14px 28px;
-      font-size: 1em;
-      text-decoration: none;
+    .cta-button {
       background-color: #b4a774;
       color: #141414;
-      border-radius: 30px;
-      transition: all 0.3s ease;
-      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
-    .cta a:hover {
-      background-color: #a39763;
+    .cta-button:hover {
+      background-color: #a09066;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+      flex-wrap: wrap;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      color: #b4a774;
+    }
+    .feature-image {
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      margin: 1rem 0;
+    }
+    form {
+      background: #1e1e1e;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid #444;
+      margin-top: 0.25rem;
+      background-color: #2a2a2a;
+      color: #f5f5f5;
+    }
+    button[type="submit"] {
+      background-color: #b4a774;
+      color: #141414;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 2rem;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      cursor: pointer;
     }
     footer {
-      background-color: #141414;
-      padding: 20px;
       text-align: center;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-    .review {
-      font-style: italic;
-      margin-top: 10px;
-      color: #ccc;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-    @media screen and (max-width: 768px) {
-      header h1 {
-        font-size: 2em;
-      }
-      header p {
-        font-size: 1em;
-      }
-      .cta a,
-      .header-buttons .main-btn,
-      .header-buttons .secondary-btn,
-      form button {
-        width: 100%;
-        margin-top: 10px;
-      }
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Custom Veneers in Los Angeles</h1>
-    <p>Finally get the smile you've always wanted, with a hand crafted smile artfully made to brighten and lift your face!</p>
-    <div class="header-buttons">
-      <a class="main-btn" href="#consult-form">Request A Consult</a>
-    </div>
-    <img src="veneers-banner.jpg" alt="Custom Veneers Banner" />
-    <h2>Is it time for the smile of your dreams?</h2>
-    <div class="header-buttons">
-      <a class="main-btn" href="#consult-form">Request A Consult</a><br>
-      <a class="secondary-btn" href="#">Virtual Consult</a>
-      <a class="secondary-btn" href="https://jasoncellarsdds.com/veneers" target="_blank">Learn More</a>
-      <a class="secondary-btn" href="https://your-scheduling-portal.com" target="_blank">Schedule Online</a>
-    </div>
+    <p>Finally get the smile you've always wanted, with a handcrafted smile artfully made to brighten and lift your face!</p>
+    <button class="cta-button" onclick="document.getElementById('consult-form').scrollIntoView({ behavior: 'smooth' });">Request A Consult</button>
   </header>
-  <div class="container">
-    <form id="consult-form">
+
+  <div class="button-group">
+    <button class="cta-button">Virtual Consult</button>
+    <button class="cta-button">Learn More</button>
+    <button class="cta-button">Schedule Online</button>
+  </div>
+
+  <section>
+    <h2>Our Published and Award Winning Cosmetic Dentists</h2>
+    <p>Your smile is everything! Dr. Andrew Higgins and Dr. Jason Cellars were trained by the best cosmetic dentists in the world and have perfected the art of creating smiles. They hand craft the smile so that it matches each persons unique face so that it isn't just a set of white teeth but a beautifully natural smile that looks like your own and enhances your entire face. Backed by the best ceramists in the world whether you want to fix chips, staining, missing teeth, or crowded teeth, your smile can be transformed in just a few visits, painlessly!</p>
+    <img src="veneers-banner.jpg" alt="Custom Veneers Banner" class="feature-image">
+  </section>
+
+  <section>
+    <h2>Why the Media Loves to Talk About Studio Smiles</h2>
+    <p>Our doctors credit all of our awards and PR to our commitment to excellence and patient centered focus.</p>
+    <ul>
+      <li>Top dentists to design a smile that looks natural and doesn't "look like veneers"</li>
+      <li>Minimally invasive technique and equipment - sometimes not needing any numbing or touching of the tooth</li>
+      <li>Patient centered approach ensuring comfort and transparency</li>
+      <li>Digital or physical mock-ups so you can try your smile before committing to anything</li>
+    </ul>
+    <img src="media-feature.jpg" alt="As Seen In the Media" class="feature-image">
+  </section>
+
+  <section>
+    <h2>What to Expect</h2>
+    <p>Every smile is different, it depends on where the patient starts and where they want to go, so every treatment is tailored to the individual's goals and budget. At the consult, whether virtual or in person, there is no pain and no commitment needed. We will show you your options, show you what you will look like with your new smile, and walk you through your tailored process to achieve the smile of your dreams and get your confidence back!</p>
+  </section>
+
+  <section>
+    <form id="consult-form" action="https://formspree.io/f/mzzvbgrd" method="POST">
       <h2>Request a Free Consult</h2>
+
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
 
@@ -211,42 +153,19 @@
       <label for="message">How can we help you?</label>
       <textarea id="message" name="message" rows="4"></textarea>
 
+      <!-- Hidden honeypot field to reduce spam -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <!-- Formspree handling -->
+      <input type="hidden" name="_subject" value="New Veneers Landing Page Lead!">
+      <input type="hidden" name="_redirect" value="https://jcellars.github.io/veneers/thank-you.html">
+
       <button type="submit">Submit Request</button>
     </form>
+  </section>
 
-    <div class="section">
-      <h2>Our Published and Award Winning Cosmetic Dentists</h2>
-      <p>Your smile is everything! Dr. Andrew Higgins and Dr. Jason Cellars were trained by the best cosmetic dentists in the world and have perfected the art of creating smiles. They hand craft the smile so that it matches each person's unique face so that it isn't just a set of white teeth but a beautifully natural smile that looks like your own and enhances your entire face. Backed by the best ceramists in the world whether you want to fix chips, staining, missing teeth, or crowded teeth, your smile can be transformed in just a few visits, painlessly!</p>
-    </div>
-    <div class="section">
-      <h2>Why the Media Loves to Talk About Studio Smiles</h2>
-      <p>Our doctors credit all of our awards and PR to our commitment to excellence and patient centered focus.</p>
-      <ul>
-        <li>Top dentists to design a smile that looks natural and doesn't "look like veneers"</li>
-        <li>Minimally invasive technique and equipment - sometimes not needing any numbing or touching of the tooth</li>
-        <li>Patient centered approach ensuring comfort and transparency</li>
-        <li>Digital or physical mock-ups so you can try your smile before committing to anything</li>
-      </ul>
-      <img src="media-feature.jpg" alt="As Seen In the Media">
-    </div>
-    <div class="section">
-      <h2>What to Expect</h2>
-      <p>Every smile is different, it depends on where the patient starts and where they want to go, so every treatment is tailored to the individual's goals and budget. At the consult, whether virtual or in person, there is no pain and no commitment needed. We will show you your options, show you what you will look like with your new smile, and walk you through your tailored process to achieve the smile of your dreams and get your confidence back!</p>
-    </div>
-    <div class="section">
-      <h2>Trusted by Thousands</h2>
-      <p>Studio Smiles is led by Dr. Andrew Higgins and Dr. Jason Cellars, two of LA’s top-rated cosmetic dentists, known for their minimally invasive and highly artistic approach to smile design.</p>
-      <div class="review">"I never imagined my smile could look this good. The team made me feel like a VIP every step of the way." – Lauren C., Los Angeles</div>
-    </div>
-  </div>
-  <div class="cta">
-    <h2>Ready for Your New Smile?</h2>
-    <a href="#consult-form">Request a Call Back</a>
-    <a href="https://jasoncellarsdds.com/veneers" target="_blank">Learn More</a>
-    <a href="https://your-scheduling-portal.com" target="_blank">Schedule Online</a>
-  </div>
   <footer>
-    <p>&copy; 2025 Studio Smiles | Located in Mid-City Los Angeles | Call us at (323) 634-9333</p>
+    Studio Smiles | (323) 634-9333
   </footer>
 </body>
 </html>
